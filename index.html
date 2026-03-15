@@ -6,87 +6,115 @@
   <title>Madi and Keenan's Wedding</title>
   <style>
     body {
-      background-color: #cfdfe8; /* Main color */
+      background-color: #cfdfe8;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
+
     header {
       text-align: center;
       padding: 20px;
     }
-    h1 {
-      color: #259c49; /* Title text color */
+
+    .title-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
     }
+
+    .title-container img {
+      width: 40px;
+      height: 40px;
+    }
+
+    h1 {
+      color: #259c49;
+      margin: 0;
+    }
+
     nav ul {
       list-style-type: none;
       padding: 0;
+      margin-top: 10px;
     }
+
     nav ul li {
       display: inline;
       margin: 0 15px;
     }
+
     nav ul li a {
       text-decoration: none;
-      color: #259c49; /* Link color */
+      color: #259c49;
+      font-weight: bold;
     }
+
     section {
       margin: 20px;
       padding: 20px;
       background-color: white;
       border-radius: 8px;
     }
+
     footer {
       text-align: center;
       padding: 10px;
-      background-color: #259c49; /* Footer background color */
+      background-color: #259c49;
       color: white;
     }
   </style>
 </head>
 <body>
-  <header>
+
+<header>
+  <div class="title-container">
+    <img src="median/icon.svg" alt="Wedding Icon">
     <h1>Madi and Keenan's Wedding</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#location">Location</a></li>
-        <li><a href="#rsvp">RSVP</a></li>
-        <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#gifts">Gifts & Donations</a></li>
-      </ul>
-    </nav>
-  </header>
+  </div>
 
-  <main>
-    <section id="about">
-      <h2>About</h2>
-      <p>Add your content about the wedding here.</p>
-    </section>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#rsvp">RSVP</a></li>
+      <li><a href="#schedule">Schedule</a></li>
+      <li><a href="#gifts">Gifts & Donations</a></li>
+    </ul>
+  </nav>
+</header>
 
-    <section id="location">
-      <h2>Location</h2>
-      <p>Add information about the wedding location here.</p>
-    </section>
+<main>
+  <section id="about">
+    <h2>About</h2>
+    <p>Add your content about the wedding here.</p>
+  </section>
 
-    <section id="rsvp">
-      <h2>RSVP</h2>
-      <p>Add your RSVP information here.</p>
-    </section>
+  <section id="location">
+    <h2>Location</h2>
+    <p>Add information about the wedding location here.</p>
+  </section>
 
-    <section id="schedule">
-      <h2>Schedule</h2>
-      <p>Add your wedding schedule details here.</p>
-    </section>
+  <section id="rsvp">
+    <h2>RSVP</h2>
+    <p>Add your RSVP information here.</p>
+  </section>
 
-    <section id="gifts">
-      <h2>Gifts & Donations</h2>
-      <p>Add information about gifts and donations here.</p>
-    </section>
-  </main>
+  <section id="schedule">
+    <h2>Schedule</h2>
+    <p>Add your wedding schedule details here.</p>
+  </section>
 
-  <footer>
-    <p>© 2027 Madi and Keenan's Wedding</p>
-  </footer>
+  <section id="gifts">
+    <h2>Gifts & Donations</h2>
+    <p>Add information about gifts and donations here.</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2027 Madi and Keenan's Wedding</p>
+</footer>
+
 </body>
 </html>
