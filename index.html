@@ -9,7 +9,7 @@
 <link rel="icon" type="image/svg+xml" href="media/icon.svg">
 
 <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&family=Bangers&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&family=Fredericka+the+Great&display=swap" rel="stylesheet">
 
 <style>
 body {
@@ -32,23 +32,20 @@ header {
   gap: 15px;
 }
 
-/* Graffiti/bubble title with 3D effect and legible letters */
+/* Graffiti-style title with Fredericka the Great, legible letters */
 .title-container h1 {
-  font-family: 'Bangers', cursive;
+  font-family: 'Fredericka the Great', cursive;
   font-size: 60px;
-  font-weight: 600; /* slightly thinner for legibility */
+  font-weight: 400;
   margin: 0;
   background: linear-gradient(45deg, #d4a3c7, #ffb6c1, #f7c1e3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  /* simplified multi-layer 3D shadows */
+  /* subtle 3D shadow for depth */
   text-shadow: 
-    0.5px 0.5px 0 #800080,         /* subtle purple outline */
-    1px 1px 0 #ff69b4,             /* pink highlight layer */
-    2px 2px 2px rgba(128,0,128,0.2); /* soft 3D depth */
-
-  -webkit-text-stroke: 0.1px #800080; /* very thin outline to preserve hollows */
+    1px 1px 0 #800080, /* subtle purple shadow */
+    2px 2px 0 #ff69b4; /* pink highlight layer */
 }
 
 /* Favicon next to title */
