@@ -12,19 +12,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&family=Monoton&display=swap" rel="stylesheet">
 
 <style>
+/* Body with soft gradient background */
 body {
-  background-color: #cfdfe8;
+  background: linear-gradient(135deg, #e6f0f5, #cfdfe8); /* subtle airy gradient */
   font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
+  color: #333;
 }
 
+/* Header styling */
 header {
   text-align: center;
-  padding: 20px 0 0 0;
+  padding: 25px 0 15px 0;
 }
 
-/* Header container to align text and favicon */
+/* Title container: text + favicon */
 .title-container {
   display: flex;
   align-items: center;
@@ -32,12 +35,12 @@ header {
   gap: 15px;
 }
 
-/* Monoton retro gradient title */
+/* Retro gradient title */
 .title-container h1 {
   font-family: 'Monoton', cursive;
-  font-size: 45px; /* slightly smaller than 30px */
+  font-size: 45px;
   margin: 0;
-  background: linear-gradient(45deg, #b28fd3, #d4a3c7); /* more purple than pink */
+  background: linear-gradient(45deg, #b28fd3, #d4a3c7);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -50,9 +53,11 @@ header {
 
 /* Navigation styling */
 nav {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 18px;
   text-align: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 nav ul {
@@ -63,7 +68,7 @@ nav ul {
 
 nav li {
   display: inline;
-  margin: 0 20px;
+  margin: 0 18px;
 }
 
 nav a {
@@ -71,27 +76,35 @@ nav a {
   color: #259c49;
   font-weight: bold;
   font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #1d7740;
 }
 
 /* Main content */
 main {
   display: flex;
   justify-content: center;
+  padding: 30px 10px;
 }
 
 section {
-  margin: 40px;
+  margin: 20px;
   padding: 25px;
   max-width: 700px;
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(6px);
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
+/* Section headers */
 h2 {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 /* Photo styling */
@@ -106,7 +119,7 @@ h2 {
 /* Footer styling */
 footer {
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   background: #259c49;
   color: white;
 }
@@ -114,6 +127,11 @@ footer {
 footer a {
   color: white;
   text-decoration: underline;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #d4f5d6;
 }
 </style>
 </head>
@@ -151,7 +169,7 @@ We are super excited to invite you to our Wedding in June of 2027 in <a href="ht
 
 We hope you can come celebrate a weekend of love and fun with us!<br><br>
 
-We are adding gradually adding all the  information on this site as planning takes place but feel free to shoot us an email at
+We are gradually adding all the information on this site as planning takes place but feel free to shoot us an email at
 <a href="mailto:keenanandmadi@gmail.com">keenanandmadi@gmail.com</a> or any other way you have of contacting us ;)<br><br>
 
 The official RSVP is through this Google Form in addition to being linked in your invitation (Please RSVP before February 2027).<br><br>
