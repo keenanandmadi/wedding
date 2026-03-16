@@ -32,9 +32,9 @@ header {
   gap: 15px;
 }
 
-/* Graffiti/bubble title with gradient + 3D shadow */
+/* Graffiti/bubble title with gradient + softer 3D shadow */
 .title-container h1 {
-  font-family: 'Bangers', cursive;  /* Graffiti/bubble font */
+  font-family: 'Bangers', cursive;
   font-size: 50px;
   font-weight: 700;
   margin: 0;
@@ -42,9 +42,9 @@ header {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 
-    2px 2px 0 #000,   /* black outline */
-    4px 4px 5px rgba(0,0,0,0.3); /* 3D shadow */
-  -webkit-text-stroke: 1px black; /* optional extra outline */
+    1px 1px 0 #000,             /* thin black outline */
+    2px 2px 4px rgba(0,0,0,0.2); /* softer 3D shadow */
+  -webkit-text-stroke: 0.8px black; /* thinner outline */
 }
 
 /* Favicon next to title */
