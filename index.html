@@ -32,25 +32,25 @@ header {
   gap: 15px;
 }
 
-/* Graffiti/bubble title with layered purple + pink 3D effect */
+/* Graffiti/bubble title with 3D effect and legible letters */
 .title-container h1 {
   font-family: 'Bangers', cursive;
   font-size: 60px;
-  font-weight: 600; /* slightly thinner */
+  font-weight: 600; /* slightly thinner for legibility */
   margin: 0;
   background: linear-gradient(45deg, #d4a3c7, #ffb6c1, #f7c1e3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  /* thinner 3D layered shadows for better legibility */
+  /* simplified multi-layer 3D shadows */
   text-shadow: 
-    0.5px 0.5px 0 #800080,         /* purple outline */
+    0.5px 0.5px 0 #800080,         /* subtle purple outline */
     1px 1px 0 #ff69b4,             /* pink highlight layer */
-    1.5px 1.5px 0 #800080,         /* purple depth layer */
-    2px 2px 3px rgba(128,0,128,0.2); /* soft 3D shadow for depth */
+    2px 2px 2px rgba(128,0,128,0.2); /* soft 3D depth */
 
-  -webkit-text-stroke: 0.3px #800080; /* thinner outline */
+  -webkit-text-stroke: 0.1px #800080; /* very thin outline to preserve hollows */
 }
+
 /* Favicon next to title */
 .title-container .favicon {
   width: 80px;
