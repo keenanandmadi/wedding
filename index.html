@@ -36,22 +36,21 @@ header {
 .title-container h1 {
   font-family: 'Bangers', cursive;
   font-size: 60px;
-  font-weight: 700;
+  font-weight: 600; /* slightly thinner */
   margin: 0;
   background: linear-gradient(45deg, #d4a3c7, #ffb6c1, #f7c1e3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
-  /* multi-layer 3D effect */
+  /* thinner 3D layered shadows for better legibility */
   text-shadow: 
-    1px 1px 0 #800080,         /* purple layer */
-    2px 2px 0 #ff69b4,         /* pink highlight layer */
-    3px 3px 0 #800080,         /* deeper purple shadow */
-    4px 4px 3px rgba(128,0,128,0.2); /* soft 3D shadow for depth */
+    0.5px 0.5px 0 #800080,         /* purple outline */
+    1px 1px 0 #ff69b4,             /* pink highlight layer */
+    1.5px 1.5px 0 #800080,         /* purple depth layer */
+    2px 2px 3px rgba(128,0,128,0.2); /* soft 3D shadow for depth */
 
-  -webkit-text-stroke: 0.8px #800080; /* thin outline */
+  -webkit-text-stroke: 0.3px #800080; /* thinner outline */
 }
-
 /* Favicon next to title */
 .title-container .favicon {
   width: 80px;
