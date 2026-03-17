@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RSVP - Madi and Keenan's Wedding 2K27</title>
+
+<link rel="icon" type="image/svg+xml" href="media/icon.svg">
+
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&family=Monoton&display=swap" rel="stylesheet">
+
+<style>
+body {
+  background: linear-gradient(135deg, #e6f0f5, #cfdfe8);
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 25px 0 15px 0;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.title-container h1 {
+  font-family: 'Monoton', cursive;
+  font-size: 45px;
+  margin: 0;
+  background: linear-gradient(45deg, #b28fd3, #d4a3c7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.title-container .favicon {
+  width: 100px;
+  height: 100px;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 18px;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 18px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #259c49;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+nav a:hover {
+  color: #1d7740;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+section {
+  margin: 20px;
+  padding: 25px;
+  max-width: 900px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(6px);
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+}
+
+iframe {
+  width: 100%;
+  height: 800px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* RSVP image button */
+.rsvp-image {
+  width: 220px;
+  max-width: 80%;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.rsvp-image:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Small toad link */
+.toad-link {
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.toad-link a {
+  color: #259c49;
+  text-decoration: underline;
+}
+
+.toad-link a:hover {
+  color: #1d7740;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #259c49;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="title-container">
+    <h1>RSVP</h1>
+    <img src="media/icon.svg" alt="Wedding Icon" class="favicon">
+  </div>
+</header>
+
+<nav>
+<ul>
+<li><a href="index.html">About</a></li>
+<li><a href="location.html">Location</a></li>
+<li><a href="travel.html">Travel</a></li>
+<li><a href="rsvp.html">RSVP</a></li>
+<li><a href="schedule.html">Schedule</a></li>
+<li><a href="gifts.html">Gifts & Donations</a></li>
+<li><a href="faq.html">FAQ</a></li>
+</ul>
+</nav>
+
+<main>
+<section>
+<h2>Please RSVP Below</h2>
+
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScxZoyW-sz5jLzLPraMkOpYvfR3d9fRlHX51jBi8Zz1-RFmgA/viewform?embedded=true">
+Loading…
+</iframe>
+
+<p>Having trouble viewing the form?</p>
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLScxZoyW-sz5jLzLPraMkOpYvfR3d9fRlHX51jBi8Zz1-RFmgA/viewform" target="_blank">
+  <img src="media/RSVP.png" alt="RSVP Button" class="rsvp-image">
+</a>
+
+<p class="toad-link">
+  Curious about something we care about?
+  <br>
+  <a href="https://www.fws.gov/project/boreal-toad-recovery" target="_blank">
+    Learn about Boreal Toad conservation 
+  </a>
+</p>
+
+</section>
+</main>
+
+<footer>
+<p>© 2027 Madi & Keenan</p>
+</footer>
+
+</body>
+</html>
