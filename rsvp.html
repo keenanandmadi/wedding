@@ -83,7 +83,7 @@ main {
 section {
   margin: 20px;
   padding: 25px;
-  max-width: 900px;
+  max-width: 800px;
   width: 100%;
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(6px);
@@ -97,39 +97,84 @@ h2 {
   margin-bottom: 20px;
 }
 
-iframe {
-  width: 100%;
-  height: 800px;
-  border: none;
-  border-radius: 10px;
+/* Toad wrapper */
+.toad-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 20px 0;
 }
 
-/* Frog clickable image */
-.frog-link {
-  display: block;
-  margin: 25px auto;
+/* Toad image */
+.toad-link-image {
   width: 140px;
   cursor: pointer;
-  transition: transform 0.2s ease, opacity 0.2s ease;
+  animation: floatSoft 3s ease-in-out infinite;
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
-.frog-link:hover {
-  transform: scale(1.1);
-  opacity: 0.9;
+/* Subtle float */
+@keyframes floatSoft {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
 }
 
-.toad-link {
-  font-size: 14px;
-  margin-top: 20px;
+/* Hover */
+.toad-wrapper:hover .toad-link-image {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 8px rgba(178, 143, 211, 0.4));
+  animation-play-state: paused;
 }
 
-.toad-link a {
-  color: #259c49;
-  text-decoration: underline;
+/* Tooltip */
+.toad-tooltip {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(37, 156, 73, 0.95);
+  color: white;
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 12px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
 }
 
-.toad-link a:hover {
-  color: #1d7740;
+.toad-wrapper:hover .toad-tooltip {
+  opacity: 1;
+}
+
+/* Ripple */
+.ripple {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(178, 143, 211, 0.25);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.toad-wrapper:active .ripple {
+  animation: rippleSoft 0.4s ease-out;
+}
+
+@keyframes rippleSoft {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.4;
+  }
+  100% {
+    width: 160px;
+    height: 160px;
+    opacity: 0;
+  }
 }
 
 footer {
@@ -164,23 +209,26 @@ footer {
 
 <main>
 <section>
-<h2>Please RSVP Below</h2>
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScxZoyW-sz5jLzLPraMkOpYvfR3d9fRlHX51jBi8Zz1-RFmgA/viewform?embedded=true">
-Loading…
-</iframe>
+<h2>RSVP</h2>
 
-<p>Having trouble viewing the form?</p>
+<p>
+  We kindly ask that you respond using the link below.
+</p>
 
-<a href="https://docs.google.com/forms/d/e/1FAIpQLScxZoyW-sz5jLzLPraMkOpYvfR3d9fRlHX51jBi8Zz1-RFmgA/viewform" target="_blank">
-  <img src="media/frog.png" alt="RSVP Frog" class="frog-link">
-</a>
+<div class="toad-wrapper">
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScxZoyW-sz5jLzLPraMkOpYvfR3d9fRlHX51jBi8Zz1-RFmgA/viewform" target="_blank">
+    <img src="media/RSVP.png" alt="RSVP" class="toad-link-image">
+    <span class="toad-tooltip">Open RSVP form</span>
+    <span class="ripple"></span>
+  </a>
+</div>
 
 <p class="toad-link">
   Curious about something we care about?
   <br>
   <a href="https://www.fws.gov/project/boreal-toad-recovery" target="_blank">
-    Learn about Boreal Toad conservation 
+    Learn about Boreal Toad conservation
   </a>
 </p>
 
