@@ -64,29 +64,116 @@ nav a:hover {
 }
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 30px 10px;
 }
 section {
   margin: 20px;
   padding: 25px;
+  width: 100%;
   max-width: 800px;
+  box-sizing: border-box;
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(6px);
   border-radius: 12px;
   box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-  text-align: center;
 }
 h2 {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+}
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #259c49;
+  margin: 30px 0 12px 0;
+  border-bottom: 2px solid #e2ece5;
+  padding-bottom: 6px;
+}
+.subtitle {
+  text-align: center;
+  font-style: italic;
+  color: #555;
+  margin-top: 0;
 }
 .coming-soon {
+  text-align: center;
   font-style: italic;
   font-size: 16px;
   color: #555;
-  padding: 20px 0;
+  padding: 10px 0;
+}
+.note {
+  background: #fff7e6;
+  border-left: 4px solid #e6b450;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 14px 18px;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.card-head a {
+  font-weight: bold;
+  font-size: 18px;
+  color: #7d5ba6;
+  text-decoration: none;
+}
+.card-head a:hover {
+  text-decoration: underline;
+}
+.price {
+  background: #e8f5ec;
+  color: #1d7740;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+.card ul {
+  margin: 8px 0 0 0;
+  padding-left: 20px;
+}
+.card li {
+  margin-bottom: 4px;
+}
+.other-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.other-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 4px;
+  border-bottom: 1px solid #eee;
+}
+.other-list li:last-child {
+  border-bottom: none;
+}
+.other-list a {
+  color: #7d5ba6;
+  font-weight: bold;
+  text-decoration: none;
+}
+.other-list a:hover {
+  text-decoration: underline;
+}
+.distance {
+  color: #555;
 }
 footer {
   text-align: center;
@@ -101,6 +188,11 @@ footer a {
 }
 footer a:hover {
   color: #d4f5d6;
+}
+@media (max-width: 600px) {
+  .title-container h1 { font-size: 32px; }
+  .title-container .favicon { width: 60px; height: 60px; }
+  nav li { display: inline-block; margin: 4px 10px; }
 }
 </style>
 </head>
@@ -123,9 +215,90 @@ footer a:hover {
 </ul>
 </nav>
 <main>
+
 <section>
 <h2>Location</h2>
-<p class="coming-soon">More information coming soon — check back for updates!</p>
+<p class="coming-soon"></p>
+</section>
+
+<section>
+<h2>Accommodation</h2>
+<p class="subtitle">Keenan's Durango, Colorado Budget Hotel &amp; Campground Guide</p>
+
+<h3>Hotels</h3>
+
+<div class="card">
+  <div class="card-head">
+    <a href="https://www.google.com/maps/search/Junction+Hotel+and+Hostel+Durango+CO" target="_blank">Junction Hostel</a>
+    <span class="price">~$30–65 USD (~$40–90 CAD) / night</span>
+  </div>
+  <ul>
+    <li>Roughly $65 USD (~$90 CAD) a night for a private room and $30 USD (~$40 CAD) a night for a 6-person dorm.</li>
+    <li>Booking isn't available online yet but should be in March or April.</li>
+    <li>Budget option close to downtown Durango.</li>
+    <li>About a 25-minute walk or 5-minute drive to the wedding.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <a href="https://www.wapitidurango.com/" target="_blank">Wapiti Lodge</a>
+    <span class="price">~$125 USD (~$175 CAD) / night</span>
+  </div>
+  <ul>
+    <li>Roughly $125 USD (~$175 CAD) a night in June.</li>
+    <li>Budget option close to downtown Durango.</li>
+    <li>About a 25-minute walk or 5-minute drive to the wedding.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <a href="https://adobeinndurango.com/" target="_blank">Adobe Inn</a>
+    <span class="price">~$142 USD (~$195 CAD) / night</span>
+  </div>
+  <ul>
+    <li>Roughly $142 USD (~$195 CAD) a night in June.</li>
+    <li>About a 9-minute bus ride, then a 5-minute walk to the wedding. Or an 8-minute drive.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <strong style="font-size:18px;">Other options</strong>
+    <span class="price">~$180 USD (~$250 CAD) / night</span>
+  </div>
+  <ul class="other-list">
+    <li><a href="https://www.choicehotels.com/colorado/durango/quality-inn-hotels/co405" target="_blank">Quality Inn</a><span class="distance">2.1 mi (3.4 km) from the wedding</span></li>
+    <li><a href="https://adventureinndurango.com/" target="_blank">Adventure Inn</a><span class="distance">2.7 mi (4.3 km)</span></li>
+    <li><a href="https://www.caboosemoteldurango.com/" target="_blank">Caboose Motel</a><span class="distance">2.7 mi (4.3 km)</span></li>
+    <li><a href="https://www.siestamotel.com/" target="_blank">Siesta Motel</a><span class="distance">2.7 mi (4.3 km)</span></li>
+  </ul>
+</div>
+
+<h3>Campgrounds</h3>
+<p class="note">You will need a car or bike to get to these campgrounds. They have likely been impacted by recent flooding, so hopefully they will be open!</p>
+
+<div class="card">
+  <div class="card-head">
+    <a href="https://www.recreation.gov/camping/campgrounds/234475" target="_blank">Junction Creek Campground</a>
+    <span class="price">~$30 USD (~$40 CAD) / night</span>
+  </div>
+  <ul>
+    <li>6.6 miles (10.6 km) from the wedding.</li>
+  </ul>
+</div>
+
+<div class="card">
+  <div class="card-head">
+    <a href="https://www.htrresorts.com/destinations/durango/" target="_blank">HTR Durango Campground</a>
+    <span class="price">~$60 USD (~$85 CAD) / night</span>
+  </div>
+  <ul>
+    <li>5.8 miles (9.3 km) from the wedding.</li>
+  </ul>
+</div>
+
 </section>
 </main>
 <footer>
