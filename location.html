@@ -175,6 +175,50 @@ h3 {
 .distance {
   color: #555;
 }
+.venue {
+  background: #fff;
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 18px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  text-align: center;
+}
+.venue h3 {
+  border: none;
+  margin: 8px 0 6px 0;
+  padding: 0;
+}
+.venue h3 a {
+  color: #7d5ba6;
+  text-decoration: none;
+}
+.venue h3 a:hover {
+  text-decoration: underline;
+}
+.venue p {
+  margin: 6px 0;
+}
+.venue-tag {
+  display: inline-block;
+  background: linear-gradient(45deg, #b28fd3, #d4a3c7);
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+.address a {
+  color: #259c49;
+}
+.map {
+  width: 100%;
+  height: 220px;
+  border: 0;
+  border-radius: 8px;
+  margin-top: 10px;
+}
 footer {
   text-align: center;
   padding: 20px;
@@ -218,12 +262,34 @@ footer a:hover {
 
 <section>
 <h2>Location</h2>
-<p class="coming-soon"></p>
+<p class="subtitle">All three events are in downtown Durango, Colorado. See the <a href="schedule.html">Schedule</a> page for dates and times.</p>
+
+<div class="venue">
+  <span class="venue-tag">Welcome Party</span>
+  <h3><a href="https://11thstreetstation.com/" target="_blank">11th Street Station</a></h3>
+  <p>A food truck collective with a bar and outdoor seating on Main Avenue.</p>
+  <p class="address">📍 <a href="https://www.google.com/maps/search/?api=1&query=11th+Street+Station+1101+Main+Ave+Durango+CO" target="_blank">1101 Main Ave, Durango, CO 81301</a></p>
+  <iframe class="map" src="https://www.google.com/maps?q=1101+Main+Ave,+Durango,+CO+81301&output=embed" loading="lazy" title="Map of 11th Street Station"></iframe>
+</div>
+
+<div class="venue">
+  <span class="venue-tag">Ceremony</span>
+  <h3>Keenan's mum and step-dad's house</h3>
+  <p>In downtown Durango. We'll share the address with guests directly.</p>
+</div>
+
+<div class="venue">
+  <span class="venue-tag">Reception — the big party!</span>
+  <h3><a href="https://durangoelks.com/index.html" target="_blank">Durango Elks Club</a></h3>
+  <p>Also in downtown Durango.</p>
+  <p class="address">📍 <a href="https://www.google.com/maps/search/?api=1&query=Durango+Elks+Lodge+901+E+2nd+Ave+Durango+CO" target="_blank">901 E 2nd Ave, Durango, CO 81301</a></p>
+  <iframe class="map" src="https://www.google.com/maps?q=901+E+2nd+Ave,+Durango,+CO+81301&output=embed" loading="lazy" title="Map of Durango Elks Club"></iframe>
+</div>
 </section>
 
 <section>
 <h2>Accommodation</h2>
-<p class="subtitle">Keenan's Durango, Colorado Budget Hotel &amp; Campground Guide</p>
+<p class="subtitle">Keenan's Durango, Colorado Budget Hotel &amp; Campground Guide (prices in USD, with approximate CAD in brackets)</p>
 
 <h3>Hotels</h3>
 
